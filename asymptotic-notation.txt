@@ -1,0 +1,9 @@
+asymptotic notations are the mathematical notions to denote the order of growth of any mathematical functions.
+
+There are three types of asymptotic notations:
+    1. Big o
+    2. Theta
+    3. Omega
+
+Why do we need upper bound of the notations?
+    - to calculate the worst case scearios of mathematical functions.

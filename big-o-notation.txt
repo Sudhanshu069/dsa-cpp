@@ -1,0 +1,10 @@
+big  o notation is used to represent exact or upper bound on order of growth.
+main use of big o notation is to represent an upper bound of the order of growth
+
+HOW TO CALCULATE?
+    Direct way:
+    * ignore lower order terms
+    * ignore leading term constants
+
+APPLICATIONS:
+used when we have an upper bound
