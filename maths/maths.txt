@@ -1,0 +1,101 @@
+finding number of digits in a number:
+ex : 123
+O/P 3[1,2,3];
+
+int countDigit(long n){
+    int count = 0;
+    while(n != 0){
+        n = n/10;
+        ++count;
+    }
+    return count;
+}
+
+logarithmic solution:
+int countDigits(long n){
+    return floor(log10(n) + 1);
+}
+
+
+
+ARITHMETIC PROGRESSIONS:
+Given a series: 2,4,6,8,10,...
+
+a = 2
+d = second term - first term = 2;
+general term: a + (n - 1)*d;
+
+sum = (first term + last term/2) * n;
+    = (a + (a + (n - 1)*d))/2 * n;
+    = (n/2)*(2a + (n - 1)*d);
+
+
+
+GEOMETRIC PROGRESSIONS:
+Given a series: 2,4,8,16,32,...
+
+r = 2
+a.r = 4, a.r2 = 8....
+general term: a.r^(n - 1);
+sum = a(1 -r^n)/(1-r)
+
+
+
+QUADRATIC EQUATIONS:
+ax^2 + bx + c = 0
+max roots = 2
+discriminant d = b^2 - 4*a*c
+d < 0; => imaginary roots
+d = 0; => two equal roots
+d > 0; => two distinct roots
+roots = (-b +- sqrt((b^2) - 4*a*c))/2*a;
+
+
+
+MEAN AND MEDIAN:
+Mean: The mean is found by adding up all the given data and dividing by the number of data entries.
+
+Median: The middle number which is found by ordering all data points and picking out the one in the middle (or if there are two medians, by taking the mean of those two numbers).
+
+
+
+PRIME NUMBERS: 
+the number only divisible by 1 and itself
+
+Note: 
+Every prime number can be represented in the form of 6n + 1 or 6n - 1 except 2 and 3, where n is natural number.
+
+Two and Three are only two consecutive natural numbers are prime too.
+
+
+
+LCM AND HCF
+Factors: All the numbers that divide the given number completely without leaving any remainder, are called factors of that number.
+
+LCM: The LCM or least common multiple is the smallest number other than zero that's a multiple of each number.
+
+HCF: The HCF or highest common factor is the highest number that exactly divides all the numbers.
+
+
+
+FACTORIALS:
+Factorial of a positive integer n, denoted by n! is the product of all the positive integers less than or equal to n;
+
+5! = 5*4*3*2*1
+
+
+
+PERMUTATIONS AND COMBINATIONS:
+Permutations: Permutation is defined as arrangement of r things that can be done out of total n things.
+
+nPr which is equal to n!/(n - r)!
+
+Combination: Combination is defined as selection of r things that can be done out total n things.
+
+
+
+MODULAR ARITHMATICS
+The remainder obtained after the division operation on two operands is known  as modulo operation.
+
+Operator for doing the modulus operation is '%'.
+
