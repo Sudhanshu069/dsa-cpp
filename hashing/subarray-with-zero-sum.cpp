@@ -18,3 +18,19 @@ bool isOSubarray(int arr[], int n){
     }
     return false;
 }
+
+bool isOSubarrayImproved(int arr[], int n){
+    unordered_set<int> h;
+    int pre_sum = 0;
+    for(int i = 0; i < n; i++){
+        pre_sum += arr[i];
+        if(h.find(pre_sum) != h.end()){ //checking whether the element is already present in the hashset or not
+            return true;
+        }
+        if(pre_sum == 0){
+            return true;
+        }
+        h.insert(pre_sum);
+    }
+    return false;
+}
